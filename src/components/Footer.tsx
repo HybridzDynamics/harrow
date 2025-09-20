@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="mt-8 text-center">
           made with ❤️ by <a href="https://hybridzdynamics.vercel.app/" className="text-secondary hover:underline" rel="noopener noreferrer" target="_blank">Hybridz Dynamics</a>
           <a
-            href="//www.dmca.com/Protection/Status.aspx?ID=a0934868-aaab-4a57-8b45-a550e92f7968"
+            href="https://www.dmca.com/Protection/Status.aspx?ID=9a681193-270b-4482-9eb0-046db4bf22a1&refurl=https://harrowacademy.vercel.app/"
             title="DMCA.com Protection Status"
             className="dmca-badge"
             rel="noopener noreferrer"
