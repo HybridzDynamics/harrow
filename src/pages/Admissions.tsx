@@ -120,9 +120,6 @@ const Admissions = () => {
           </p>
         </div>
       </section>
-
-      
-    
       {/* Application Form */}
       <section className="py-20">
         <div className="container mx-auto px-6">

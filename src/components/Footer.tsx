@@ -1,8 +1,22 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import schoolLogo from "@/assets/school-logo.png";
 
 const Footer = () => {
+  useEffect(() => {
+    // Dynamically load DMCA badge helper script (only in browser)
+    if (typeof document !== "undefined") {
+      const id = "dmca-badge-helper";
+      if (!document.getElementById(id)) {
+        const script = document.createElement("script");
+        script.id = id;
+        script.src = "https://images.dmca.com/Badges/DMCABadgeHelper.min.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }
+  }, []);
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 py-12">
@@ -82,8 +96,19 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-8 text-center">
-          made with ❤️ by <a href="https://hybridzdynamics.vercel.app/" className="text-secondary hover:underline">Hybridz Dynamics</a>
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=a0934868-aaab-4a57-8b45-a550e92f7968" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-04.png?ID=a0934868-aaab-4a57-8b45-a550e92f7968"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+          made with ❤️ by <a href="https://hybridzdynamics.vercel.app/" className="text-secondary hover:underline" rel="noopener noreferrer" target="_blank">Hybridz Dynamics</a>
+          <a
+            href="//www.dmca.com/Protection/Status.aspx?ID=a0934868-aaab-4a57-8b45-a550e92f7968"
+            title="DMCA.com Protection Status"
+            className="dmca-badge"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-04.png?ID=a0934868-aaab-4a57-8b45-a550e92f7968"
+              alt="DMCA.com Protection Status"
+            />
+          </a>
         </div>
       </div>
     </footer>
