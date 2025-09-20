@@ -105,8 +105,8 @@ const Partnership = () => {
                 </CardContent>
               </Card>
             </motion.div>
-
-            <motion.div variants={fadeInUp}>
+ 
+           <motion.div variants={fadeInUp}>
               <Card className="h-full hover:shadow-xl transition-all duration-300 border-primary/20 hover:border-primary/40">
                 <CardHeader className="text-center pb-4">
                   <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
