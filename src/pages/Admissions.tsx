@@ -25,13 +25,7 @@ const Admissions = () => {
     roleplay: ""
   });
 
-  const leadership = [
-    { title: "Headteacher", name: "Mr William Oyston", icon: Award },
-    { title: "Leading Governor:", name: "Ryan Lauren", icon: Users },
-    { title: "Governor", name: "Lucas Taylor", icon: Users },
-    { title: "Chair of Governor", name: "Sam Revell", icon: Users },
-    { title: "Executive Headteacher", name: "Mrs J Revell", icon: GraduationCap }
-  ];
+
   
   const departments = [
     "Humanities (History, Geography, Religion, Life Lessons)",
@@ -127,88 +121,8 @@ const Admissions = () => {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Meet Our Leadership Team</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Join an amazing team of Executive Leadership dedicated to educational excellence
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leadership.map((leader, index) => (
-              <Card key={index} className="hover-lift animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardHeader className="text-center">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <leader.icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <CardTitle className="text-xl text-primary">{leader.name}</CardTitle>
-                  <p className="text-muted-foreground">{leader.title}</p>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Current Openings */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Current Openings</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're currently hiring for multiple positions across various departments
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="hover-lift animate-slide-up">  
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-4">
-                  <Briefcase className="h-8 w-8 text-secondary-foreground" />
-                </div>
-                <CardTitle className="text-2xl text-primary">Leadership Positions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">MLT Positions - Head of Departments</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">Head of Years</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-lift animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-4">
-                  <GraduationCap className="h-8 w-8 text-primary-foreground" />
-                </div>
-                <CardTitle className="text-2xl text-primary">Teaching Staff</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">Teaching Staff (Multiple Positions)</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
-                    <span className="text-muted-foreground">SEND Staff (Special Educational Needs)</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
+      
+    
       {/* Application Form */}
       <section className="py-20">
         <div className="container mx-auto px-6">

@@ -83,6 +83,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 text-center">
           made with ❤️ by <a href="https://hybridzdynamics.vercel.app/" className="text-secondary hover:underline">Hybridz Dynamics</a>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=a0934868-aaab-4a57-8b45-a550e92f7968" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-04.png?ID=a0934868-aaab-4a57-8b45-a550e92f7968"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
         </div>
       </div>
     </footer>

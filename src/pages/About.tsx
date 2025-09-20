@@ -30,17 +30,21 @@ const About = () => {
 
   const leadership = [
     {
-      name: "Ryan Lauren",
-      position: "Leading Governor",
+      name: "Jaycee Revell",
+      position: "Group Holder",
+    },
+    {
+      name: "Sam Revell",
+      position: "Chair of Governor",
      
     },
     {
-      name: "Jaycee Lauren",
+      name: "Chris Bowing",
       position: "Executive Headteacher",
      
     },
     {
-      name: "William Oyston",
+      name: "Mr. M. South",
       position: "Headteacher",
       
     }
